@@ -21,3 +21,132 @@ body{
     
 }
 
+
+/* stil för navbar*/
+.navbar{
+    width: 100%;
+    font-size: x-small;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background: #330404f0;
+
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+    
+}
+
+.link a{
+    display: flex;
+    color: #fff;
+    opacity: 0.4;
+    padding: 5px 15px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 2em;
+    
+}
+.navbar a {
+    font-size: 20px;
+  }
+  
+  /* storlek för mobiltelefoner */
+  @media (max-width: 768px) {
+    .navbar a {
+      font-size: 12px; 
+    }
+  }
+/* stilar för länkar hover*/
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+/*HOME Section*/
+.home-section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: 5s;
+   
+   
+}
+
+.home-heading{
+    
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+   
+}
+@media (max-width: 768px) {
+    .home-heading {
+      font-size: 20px; 
+    }
+  }
+
+.home-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    size-adjust: 100% ;
+    transition: 10s;
+    
+}
+footer {
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    font-size: 1em;
+    background-color: #330404f0; 
+    text-align: center; 
+    
+}
+footer p {
+    font-size: 16px;
+}
+
+
+
+/*kontakt del*/
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% высоты видимого экрана */
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+
+/* stil (iframe) */
+.map-frame {
+    width: 70%; 
+    height: 60%; 
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+}
