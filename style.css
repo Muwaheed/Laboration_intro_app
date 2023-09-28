@@ -150,3 +150,192 @@ footer p {
     border: 2px solid #ccc;
     border-radius: 10px; 
 }
+
+/*Projekt del*/
+
+.project-section{
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+}
+
+.project-heading{
+    
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent; /* Tjocklek och färg på kanten */
+}
+      
+/* storlek för mobiltelefoner */
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 10px; 
+  }
+}
+
+.project-container{
+
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.project-card{
+    height: 400px;
+    position: relative;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 10s;
+    position: absolute;
+    
+    size-adjust: 100% ;
+   
+}
+
+.project-content{
+    position: relative;
+    padding: 40px;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-title{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+
+.project-info{
+    margin: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.project-btn-grp{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.project-btn{
+
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    cursor: grab;
+    text-align: center;
+}
+
+
+.project-card:hover .project-img{
+    filter: blur(20px);
+}
+
+.project-card:hover .project-content{
+    opacity: 1;
+}
+
+
+/*Jag del*/
+
+.jag-section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: fixed;
+    top: 0;
+   
+    opacity: 0.9;
+}
+
+.jag-heading{
+    
+   
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent; /* Tjocklek och färg på kanten */
+}
+      
+/* storlek för mobiltelefoner */
+@media (max-width: 768px) {
+  .jag-heading {
+    font-size: 10px; 
+  }
+}
+
+
+
+.jag-container{
+
+    display: grid;
+
+    grid-template-columns: auto;
+}
+
+.jag-card{
+    height: 400px;
+    position: relative;
+}
+
+.jag-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 10s;
+    position: absolute;
+    size-adjust: 100% ;
+   
+}
+
+.jag-content{
+    position: relative;
+    padding: 40px;
+    color: bisque;
+    transition: 0.5s;
+    opacity: 0;
+   
+}
+
+.jag-info{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+
+
+}
+
+.jag-card:hover .jag-img{
+    filter: blur(20px);
+}
+
+.jag-card:hover .jag-content{
+    opacity: 1;
+}
+
